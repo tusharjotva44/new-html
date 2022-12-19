@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            text-align: center;
+        }
+
+        fieldset {
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+
+        legend {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form action="php.backend">
+        <fieldset>
+            <legend align="center">Login Form</legend>
+            <label>Username : <input type="text" placeholder="Enter your name..." required></label>
+            <br><br>
+            <label>Password : <input type="password" maxlength="8" placeholder="password" required></label>
+            <br><br>
+            <label>Mobile No. : <input type="tel" placeholder="+91 XXXXXXXXXX" required></label>
+            <br><br>
+            <label>Number : <input type="number"></label>
+            <br><br>
+            <label>Date of Birth : <input type="date"></label>
+            <br><br>
+            <label>E-mail : <input type="email" placeholder="Enter your email..."></label>
+            <br><br>
+            <label>Date-Time : <input type="datetime-local"></label>
+            <br><br>
+            <label>Gender :
+                <label><input type="radio" name="gender">Male</label>
+                <label><input type="radio" name="gender">Female</label>
+            </label>
+            <br><br>
+            <label>Hobbies :
+                <label><input type="checkbox">Cricket</label>
+                <label><input type="checkbox">Footbal</label>
+                <label><input type="checkbox">Basketball</label>
+                <label><input type="checkbox">Cycling</label>
+                <label><input type="checkbox">Reading</label>
+                <label><input type="checkbox" checked>Travelling</label>
+            </label>
+            <br><br>
+            <label>Tell us more about your hobbies :
+                <textarea name=" " id="" cols="30" rows="10"></textarea>
+            </label>
+            <br><br>
+            <label>Select city :
+                <select>
+                    <option selected hidden disabled>--select city--</option>
+                    <option>Ahmedabad</option>
+                    <option>Surat</option>
+                    <option>Anand</option>
+                    <option>Junagadh</option>
+                    <option>Jamnagar</option>
+                    <option>Somnath</option>
+                    <option>Rajkot</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Education :
+                <select name="" id="" multiple>
+                    <option value="none">none</option>
+                    <option value="">10th</option>
+                    <option value="">12th</option>
+                    <option value="">b.com</option>
+                    <option value="">ER</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Color : <input type="color"></label>
+            <br><br>
+            <label>
+                <input type="button" value="readmore">
+                <input type="submit" value="savedata">
+                <input type="reset" value="resetdata">
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
